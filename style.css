@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --cor-fundo: #11071f; 
+    --cor-card: #2a1a45;  
+    --cor-texto-principal: #f0f0f0; 
+    --cor-texto-secundario: #a39ec4; 
+    --cor-destaque: #9e47ff; 
+    --cor-borda-botao: #c48eff; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cabecalho {
+    padding: 60px 20px 0px 20px;
+    max-width: 800px;
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem; 
+    margin: 10px 0;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: var(--cor-texto-secundario);
+}
+
+.destaque {
+    color: var(--cor-destaque);
+    font-weight: 600;
+}
+
+.projetos {
+    width: 100%;
+    padding: 10px 20px 40px 20px;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+.card {
+    background-color: var(--cor-card);
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(158, 71, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(158, 71, 255, 0.25);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--cor-texto-principal);
+}
+
+.card p {
+    color: var(--cor-texto-secundario);
+    font-size: 1rem;
+    line-height: 1.5;
+    flex-grow: 1; 
+    margin-bottom: 25px;
+}
+
+.btn-projeto {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid var(--cor-borda-botao);
+    color: var(--cor-texto-principal);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none; 
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-projeto:hover {
+    background-color: var(--cor-borda-botao);
+    color: var(--cor-fundo);
+}
+
+@media (max-width: 768px) {
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+}

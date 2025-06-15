@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #d1d1d1;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #393737;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#input-task {
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+}
+
+#addtask-btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+#addtask-btn:hover {
+    background-color: #2980b9;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}   
+
+#tasklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    line-height: 10px;
+    border-bottom: 1px solid #ddd;
+    text-indent: 5px;
+}
+
+.empty-message {
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+.delete-btn:hover {
+    background-color: #c0392b;
+}
